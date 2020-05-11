@@ -88,6 +88,7 @@ int __cdecl main(void)
         WSACleanup();
         return 1;
     }
+    printf("Accepted connection: %d\n", ClientSocket);
 
     // No longer need server socket
     closesocket(ListenSocket);
